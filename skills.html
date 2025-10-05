@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f5f9;
+    }
+
+    .skills {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #fff;
+      text-shadow: 0 0 20px #7c5cff;
+    }
+
+    .skills-category {
+      margin-bottom: 3rem;
+    }
+
+    .skills-category h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #7c5cff;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    .skill-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      transition: 0.3s;
+      text-align: center;
+      width: 120px;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px #7c5cff;
+    }
+
+    .skill-box i {
+      font-size: 2.2rem;
+      color: #7c5cff;
+      margin-bottom: 0.6rem;
+    }
+
+    .skill-box p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #e2e8f0;
+    }
+  </style>
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="skills">
+    <h2>⚡ Skills</h2>
+
+    <!-- Frontend -->
+    <div class="skills-category">
+      <h3>🎨 Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fab fa-html5"></i><p>HTML</p></div>
+        <div class="skill-box"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+        <div class="skill-box"><i class="fab fa-js"></i><p>JavaScript</p></div>
+      </div>
+    </div>
+
+    <!-- Frameworks & Libraries -->
+    <div class="skills-category">
+      <h3>⚛️ Frameworks & Libraries</h3>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fab fa-react"></i><p>React</p></div>
+        <div class="skill-box"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
+        <div class="skill-box"><i class="fas fa-fire"></i><p>Firebase</p></div>
+      </div>
+    </div>
+
+    <!-- Backend & Databases -->
+    <div class="skills-category">
+      <h3>🛠 Backend & Databases</h3>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fab fa-node"></i><p>Node.js</p></div>
+        <div class="skill-box"><i class="fas fa-database"></i><p>MongoDB</p></div>
+        <div class="skill-box"><i class="fas fa-server"></i><p>Express.js</p></div>
+      </div>
+    </div>
+
+    <!-- Tools & Others -->
+    <div class="skills-category">
+      <h3>⚙️ Tools & Others</h3>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fab fa-git-alt"></i><p>Git</p></div>
+        <div class="skill-box"><i class="fab fa-github"></i><p>GitHub</p></div>
+        <div class="skill-box"><i class="fas fa-code-branch"></i><p>VS Code</p></div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills-category">
+      <h3>🌟 Soft Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fas fa-users"></i><p>Teamwork</p></div>
+        <div class="skill-box"><i class="fas fa-comments"></i><p>Communication</p></div>
+        <div class="skill-box"><i class="fas fa-lightbulb"></i><p>Creativity</p></div>
+        <div class="skill-box"><i class="fas fa-tasks"></i><p>Time Mgmt</p></div>
+        <div class="skill-box"><i class="fas fa-brain"></i><p>Problem Solving</p></div>
+        <div class="skill-box"><i class="fas fa-handshake"></i><p>Leadership</p></div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

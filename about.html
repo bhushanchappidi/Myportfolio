@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> About Section</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f5f9;
+    }
+
+  .about{
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    /* Floating profile photo */
+      .about img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 50%;
+      border: 5px solid #7c5cff;
+      box-shadow: 0 0 30px rgba(124, 92, 255, 0.7);
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* Glassmorphism text card */
+    .about-text {
+      background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(12px);
+      padding: 2rem ;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      position: relative;
+    }
+    .typing {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #fc5cff;
+      margin-bottom: 1rem;
+      min-height: 24px;
+    }
+
+    .about0-text p {
+      line-height: 1.7;
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Highlight tags */
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .highlight-box {
+      background: rgba(124, 92, 255, 0.1);
+      padding: 0.8rem 1.2rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #fff;
+      border: 1px solid rgba(124, 92, 255, 0.4);
+      transition: 0.3s ease;
+    }
+    .highlight-box:hover {
+      background: #7c5cff;
+      box-shadow: 0 0 15px #70fffa;
+    }
+    .highlights {
+        justify-content: center;
+      }
+
+    /* Buttons */
+    .btn1,.btn2 {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      margin-right: 10px;
+      background: linear-gradient(360deg, #6a45fe, #2fedba);
+      color: #fff;
+      text-decoration:none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(255, 104, 255, 0.7);
+    }
+    .btn1:hover {
+      transform: translateY(-5px);
+    }
+    
+    .btn2:hover {
+      transform: translateY(5px);
+    }
+    
+      .about ,.about0{
+       
+        text-align:center ;
+      }
+      .about img {
+        height: 300px;
+        weight: 300px;
+        margin: auto;
+      }
+      
+      
+
+    
+  </style>
+</head>
+<body>
+  
+  
+  <section class="about">
+    <img src="bhushan03.png" alt="Your Photo">
+    <div class="about-text">
+      <h2>Hi, I'm Bhushan 👋</h2>
+      <div class="typing" id="typing"></div>
+      <p>
+        A passionate web developer who loves creating clean, modern, and responsive websites. 
+        I enjoy solving problems, learning new technologies, and building projects that make life easier.
+      </p>
+      <p>
+        When I’m not coding, I enjoy reading, gaming, and exploring new ideas that inspire my creativity. 
+        My goal is to keep improving my skills and contribute to exciting projects.
+      </p>
+      <div class="highlights">
+        <div class="highlight-box">💻 Frontend Developer</div>
+        <div class="highlight-box">⚡ Fast Learner</div>
+        <div class="highlight-box">🌍 Open Source Enthusiast</div>
+        <div class="highlight-box">🎨 Creative Thinker</div>
+      </div>
+      <a href="resume.pdf" class="btn1" target="_blank">Download Resume</a>
+      <a href="#projects" class="btn2">See My Work</a>
+    </div>
+  </section>
+
+  
+
+  <!-- Typing Animation Script -->
+  <script>
+    const texts = ["Web Developer", "UI/UX Enthusiast", "Problem Solver", "Open Source Contributor"];
+    let index = 0;
+    let charIndex = 0;
+    const typingElement = document.getElementById("typing");
+
+    function type() {
+      if (charIndex < texts[index].length) {
+        typingElement.textContent += texts[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 2000);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = texts[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+      } else {
+        index = (index + 1) % texts.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if(texts.length) setTimeout(type, 500);
+    });
+  </script>
+</body>
+</html>
