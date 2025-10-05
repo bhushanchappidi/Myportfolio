@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhushan Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #e0dada;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: #fafafa;
+      border-right: 1px solid #eee;
+      padding-right: 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+.sidebar img {
+      
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+      border: 5px solid #7c5cff;
+      box-shadow: 0 0 30px rgba(124, 92, 255, 0.7);
+      animation: float 4s ease-in-out infinite;
+  margin-top: 10px;   
+  margin-bottom:1px;  
+}
+
+.sidebar h2 {
+  margin-top: 1px;    /* reduce default browser margin */
+}
+
+
+
+    .nav {
+      list-style: none;
+      width: 100%;
+    }
+
+    .nav li {
+      margin: 1rem 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav a:hover {
+      color: #4a4aff;
+    }
+
+    
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 3rem;
+      position: relative;
+    }
+
+    
+
+    
+
+    .code-lines {
+      margin-top: 5rem;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+
+    .code-lines span {
+      color: #4a4aff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .sub-text {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    
+        .social a {
+      display:inline-flex;align-items:center;justify-content:center;
+      width:40px;height:40px;margin:5px;
+      border-radius:50%;color:#fff;background:#333;
+      text-decoration:none;font-size:18px;transition:.3s;
+    }
+    .social a:hover {transform:scale(1.1);}
+    .facebook:hover{background:#1877f2;}
+    .twitter:hover{background:#1da1f2;}
+    .instagram:hover{background:#e4405f;}
+    .linkedin:hover{background:#0077b5;}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="bhushan03.png" alt="profile">
+    <h2>Bhushan</h2>
+    <div class="social">
+    <a href="https://www.facebook.com/share/1G4vu7dPJf/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/thebl_ackx7?igsh=MXgyeWp0ZzMycXJzMQ==" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+    <ul class="nav">
+      <li style="padding-left:30px ;"><a href="index.html">🏠︎ Home</a></li>
+       <li style="padding-left:30px ;"><a href="about.html">😊 About Me</a></li>
+       <li style="padding-left:30px ;"><a href="skills.html">🎯skills</a>
+      <li style="padding-left:30px ;"><a href="projects.html">👓 Projects</a></li>
+      
+      <li style="padding-left:30px ;"><a href="contact.html">📞 contact</a></li>
+    </ul>
+    
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    
+
+    <div class="code-lines">
+      <div>&lt;Hello, I'm <span>Bhushan!</span>&gt;</div>
+      <div>&lt;I <span>design</span>, and <span>develop</span>&gt;</div>
+      <div>websites.&lt;/&gt;</div>
+    </div>
+
+    <div class="sub-text">
+      I also design your brand image, logo...
+    </div>
+  </main>
+
+
+</body>
+</html>
